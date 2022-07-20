@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="speaker-form-header">
+        <h1>Speaker Submission</h1>
+        <p><em>Want to speak at Univesity at Buffalo's annual computer science conference? Please fill out the form
+                below.</em></p>
+    </header>
+
+    <form action="" method="get" class="speaker-form">
+
+        <fieldset>
+            <legend>Participant Details</legend>
+            <div class="image">
+                <img src="image.jpeg" alt="ub-three-pillars">
+            </div>
+            <div class="form">
+                <div>
+                    <label for="full-name">Name:</label>
+                    <input type="text" name="full-name" id="full-name" placeholder="First Name,Last Name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="john@example.com">
+                </div>
+                <div class="talk-type">
+                    <p>Type of Talk:</p>
+                    <label for="at-venue" class="radio-label">At Venue</label>
+                    <input type="radio" name="talk-type" id="at-venue" value="at-venue" checked>
+                    <label for="virtual" class="radio-label">Virtual</label>
+                    <input type="radio" name="talk-type" id="virtual" value="virtual">
+                </div>
+                <div>
+                    <label for="shirt-size">T-Shirt Size:</label>
+                    <select name="shirt-size" id="shirt-size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="abstract">Abstract:</label>
+                    <textarea name="abstract" id="absract" cols="30"
+                        rows="10">Please enter a brief of description of your conference topic...</textarea>
+                </div>
+                <div>
+                    <label for="confirmation">
+                        <input type="checkbox" name="confirmation" id="confirmation">
+                        <span>Please check this for an email confirmation</span>
+                    </label>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
