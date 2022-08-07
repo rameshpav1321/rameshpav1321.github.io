@@ -42,7 +42,6 @@ const displayController = (() => {
     }
     return { displayMessage }
 })();
-
 // module for game board--------------------------------------------------------------------
 const gameBoard = (() => {
     const board = ["", "", "", "", "", "", "", "", ""];
@@ -61,18 +60,18 @@ const gameBoard = (() => {
     }
     return { resetBoard, setCell, getCell };
 })();
-
 // module for game flow-------------------------------------------------------------------
-
 const gameFlow = (() => {
-    const player1 = createPlayer(...document.getElementById('player1').value.split(","));
-    const player2 = createPlayer(...document.getElementById('player2').value.split(","));
+    let player1;
+    let player2;
     let gameStart = false;
     let gameEnd = false;
     let matchFound = false;
     let count = 1;
     const setGameStart = () => {
         gameStart = true;
+        player1 = createPlayer(...document.getElementById('player1').value.split(","));
+        player2 = createPlayer(...document.getElementById('player2').value.split(","));
     }
     const getGameEnd = () => {
         return gameEnd;
@@ -97,7 +96,6 @@ const gameFlow = (() => {
             return;
         }
         count++;
-        console.log(count)
         displayController.displayMessage(`${getPlayerName()}'s turn`);
     }
     const getPlayerName = () => {
@@ -125,5 +123,5 @@ const gameFlow = (() => {
         })
         return matchFound;
     }
-    return { playGame, setGameStart, getGameEnd, reset, getPlayerName }
+    return { playGame, setGameStart, getGameEnd, reset, getPlayerName };
 })();
