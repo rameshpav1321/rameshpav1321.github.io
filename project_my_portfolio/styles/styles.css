@@ -300,7 +300,7 @@ span {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .about-container .left-about h4 {
@@ -406,9 +406,12 @@ span {
 /* timeline------------------------------------------------------------*/
 .timeline {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
 
 .timeline .timeline-item {
