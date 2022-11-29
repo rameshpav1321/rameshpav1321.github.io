@@ -35,5 +35,9 @@ function PageTransitions() {
       element.classList.add("active");
     }
   });
+  //Toggle button
+  document.querySelector(".theme-btn").addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+  });
 }
 PageTransitions();
