@@ -187,19 +187,21 @@ header {
 }
 
 .left-header .image {
-  height: 300px;
-  width: 300px;
+  height: 325px;
+  width: 325px;
   border-radius: 50%;
   margin-left: 8rem;
   transition: var(--transition);
-  background-image: url(../img/my_img.jpeg);
-  background-size: 100% 100%;
+  filter: grayscale(0%);
+  background-image: url(../img/my_img.png);
+  background-size: 90% 90%;
 }
 
-/* .left header .image img {
+/* .left header .image {
   border-radius: 50%;
   object-fit: cover;
   transition: var(--transition);
+  margin-left: 8rem;
   filter: grayscale(0%);
   height: 100%;
   width: 100%;
