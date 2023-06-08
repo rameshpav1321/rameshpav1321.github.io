@@ -424,7 +424,7 @@ span {
 /* timeline------------------------------------------------------------*/
 .timeline {
   display: grid;
-  grid-template-rows: fit-content(300px) fit-content(300px) fit-content(300px) fit-content(
+  grid-template-rows: fit-content(300px) fit-content(200px) fit-content(200px) fit-content(
       300px
     );
   grid-gap: 2rem;
