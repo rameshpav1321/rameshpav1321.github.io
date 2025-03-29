@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+/*Center part of the page-----------------------------*/
+body {
+    background-image: url('./img/background.jpeg');
+    background-size: cover;
+}
+
+.game-options {
+    margin: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.option {
+    height: 300px;
+    width: 300px;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: white;
+
+}
+
+
+img {
+    width: 40%;
+    height: 40%;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Bottom part of the page----------------------*/
+.scores {
+    margin: 20px auto;
+    /*border: 3px solid white;*/
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.user-score,
+.comp-score {
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+/*Footer part of the page----------------*/
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+
+}

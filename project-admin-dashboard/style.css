@@ -1,0 +1,190 @@
+* {
+    font-family: Monaco;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* height: 100vh; */
+
+}
+
+/* Sidebar----------------------------------------------------- */
+.sidebar {
+    background-color: rgb(159, 189, 189);
+}
+
+.logo-dashboard {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: teal;
+    color: white;
+}
+
+/* Header content styling ------------------------------------------------*/
+
+.header {
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.profile-img {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+
+input {
+    width: 600px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+button {
+    background-color: rgb(159, 189, 189);
+    width: 90px;
+    height: 30px;
+    border: 1px black;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: teal;
+    color: white;
+}
+
+/* Main content styling ------------------------------------------*/
+.main-content {
+    background-color: whitesmoke;
+
+}
+
+.title-services {
+    padding: 15px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15px;
+}
+
+.service {
+    height: 200px;
+    width: 350px;
+    border: 1px black;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    margin-right: 2px;
+    transition: margin 0.2s ease-in-out;
+    border-left: 10px solid rgb(159, 189, 189);
+
+}
+
+.service:hover {
+    margin-top: -5px;
+    background-color: lightslategray;
+    color: white;
+    border-left: 10px solid gray;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.grid-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+
+
+/* Grid right------------------------------------------------------- */
+
+.grid-right {
+    margin-left: 10px;
+
+}
+
+.announcement {
+    /* border: 1px solid black; */
+    background-color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 6px;
+    border-radius: 15px;
+}
+
+.trending {
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 6px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}

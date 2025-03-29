@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>project-signup-form</title>
+</head>
+
+<body>
+    <div class="left">
+        <div class="logo-div">
+            <img class="logo" src="logo.png" alt="logo-image">
+            <div class="logo-title">Service-Door</div>
+        </div>
+        <img src="image.png" alt="services-image" class="image">
+    </div>
+    <div class="right">
+        <p class="text-top1">This is not a real online service! You know you need something like this in your life to
+            help you realize your deepest dreams. Sign up now to get started!!
+        </p>
+        <p class="text-top2">You know you want to😅</p>
+        <form action="" method="get">
+            <div class="form-background">
+                <p class="form-header">Let's do this🤘</p>
+                <div class="form-input">
+                    <div class="form-left">
+                        <label>FIRST NAME*:<input type="text" name="first-name" required></label>
+                        <label>EMAIL*:<input type="email" name="email" required></label>
+                        <label>PASSWORD*:<input type="password" name="pwd" id="pwd" required></label>
+                    </div>
+                    <div class="form-right">
+                        <label>LAST NAME*:<input type="text" name="last-name" required></label>
+                        <label>PHONE NUMBER:<input type="tel" name="phone-no"></label>
+                        <label>CONFIRM PASSWORD*:<input type="password" name="confirm-pwd" id="confirm-pwd"
+                                required></label>
+                    </div>
+                </div>
+                <span id="pwd-validation-alert"></span>
+            </div>
+            <button class="button" id="btn">Create Account</button>
+            <p class="text-bottom">Already have an account? <span class="login">Log In</span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
